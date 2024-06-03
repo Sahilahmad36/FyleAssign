@@ -1,0 +1,158 @@
+body {
+    margin: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  
+  .navbar {
+    background-color: white;
+    padding: 20px;
+    border-bottom: 2px solid rgb(226, 225, 225);
+  }
+  
+  .split-screen {
+    display: flex;
+    flex: 1;
+  }
+  
+  .left-pane, .right-pane {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  .left-pane {
+    background-color: white;
+  }
+  
+  .right-pane {
+    background-color: white;
+  }
+  
+  .image {
+    width: 750px;
+    height: 600px;
+    border-radius: 5px;
+  }
+  
+  .award {
+    margin-top: 40px;
+    margin-right: 16rem;
+    color: rgb(232, 50, 50);
+  }
+  
+  .digital {
+    padding: 10px;
+    font-size: 3.5rem;
+    margin: 10px;
+    margin-left: 60px;
+  }
+  
+  .para {
+    margin-bottom: 140px;
+    margin-left: 80px;
+  }
+  .button{
+    margin-right: 25rem;
+    font-size: 16px;
+    border: 2px solid white;
+    border-radius: 5px;
+    outline: none;
+    background-color: #de2222;
+    padding: 12px 25px;
+    position: relative;
+    transform: translateZ(0);
+    animation-name: moveUp;
+    animation-duration: 1s;
+    cursor: pointer;
+  }
+  .button:before{
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #eeff00;
+    transform: scaleX(0);
+    transition: 300ms ease-out;
+  }
+  .button:hover:before{
+  transform: scaleX(1);
+  
+  }
+  
+  @media (max-width: 1024px) {
+    .image {
+      width: 600px;
+      height: 480px;
+    }
+  
+    .award {
+      margin-right: 12rem;
+      margin-left: 20px;
+    }
+  
+    .digital {
+      font-size: 3rem;
+    }
+  
+    .para {
+      margin-bottom: 100px;
+      margin-left: 60px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .split-screen {
+      flex-direction: column;
+    }
+  
+    .left-pane, .right-pane {
+      flex: none;
+      height: auto;
+    }
+  
+    .image {
+      width: 100%;
+      height: auto;
+    }
+  
+    .award {
+      margin-right: 0;
+      text-align: center;
+    }
+  
+    .para {
+      margin-bottom: 40px;
+      margin-left: 20px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .navbar {
+      padding: 10px;
+    }
+  
+    .image {
+      width: 100%;
+      height: auto;
+    }
+  
+    .award {
+      font-size: 1.2rem;
+      margin-right: 0;
+    }
+  
+    .digital {
+      font-size: 2.5rem;
+    }
+  
+    .para {
+      margin-bottom: 20px;
+      margin-left: 10px;
+    }
+  }

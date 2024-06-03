@@ -1,0 +1,82 @@
+.project{
+    margin-bottom: 30px;
+}
+.our h1{
+   text-align: center;
+   color: rgb(232, 50, 50);
+   font-size: 20px;
+}
+.why{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+}
+
+
+.card-image {
+    width: 150px;
+    height: auto;
+    object-fit: cover;
+}
+
+.card-content {
+    flex: 1;
+    padding: 20px;
+    height: 127px;
+}
+
+.card-title {
+    font-size: 24px;
+    margin: 0 0 10px;
+}
+
+.card-text {
+    font-size: 16px;
+    margin: 0;
+ }
+
+.box {
+    margin-right: 18rem;
+    padding: 22px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.box:hover {
+    background-color: rgb(232, 50, 50);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.horizontal-card {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ddd;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #eaeee9;
+    width: 100%;
+    max-width: 800px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.horizontal-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(164, 12, 12, 0.1);
+}
+
+.card-content {
+    padding: 20px;
+    flex: 1;
+}
+
+.card-title {
+    font-size: 24px;
+    margin: 0 0 10px;
+}
+
+.card-text {
+    font-size: 16px;
+    margin: 0;
+}
+.image{
+    margin-left: 40px;
+}
